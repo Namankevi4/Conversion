@@ -1,0 +1,9 @@
+c:\users\alexandr\documents\visual studio 2012\Projects\Conversion\Conversion\bin\Debug\Conversion.exe.config
+C:\Users\Alexandr\documents\visual studio 2012\Projects\Conversion\Conversion\bin\Debug\Conversion.exe
+C:\Users\Alexandr\documents\visual studio 2012\Projects\Conversion\Conversion\bin\Debug\Conversion.pdb
+C:\Users\Alexandr\documents\visual studio 2012\Projects\Conversion\Conversion\obj\Debug\Conversion.csprojResolveAssemblyReference.cache
+C:\Users\Alexandr\documents\visual studio 2012\Projects\Conversion\Conversion\obj\Debug\Conversion.Form1.resources
+C:\Users\Alexandr\documents\visual studio 2012\Projects\Conversion\Conversion\obj\Debug\Conversion.Properties.Resources.resources
+C:\Users\Alexandr\documents\visual studio 2012\Projects\Conversion\Conversion\obj\Debug\Conversion.csproj.GenerateResource.Cache
+C:\Users\Alexandr\documents\visual studio 2012\Projects\Conversion\Conversion\obj\Debug\Conversion.exe
+C:\Users\Alexandr\documents\visual studio 2012\Projects\Conversion\Conversion\obj\Debug\Conversion.pdb
