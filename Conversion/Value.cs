@@ -8,25 +8,49 @@ namespace Conversion
 {
     public class Value
     {
-        public int val;
-        public string name;
+        public Value(double value)
+        {
+            this.val = value;
+            
+        }
+        public double val;
+        protected string name;
 
 
+        public static Value operator +(Value t, Value s)
+        {
+            if (t.name == s.name)
+            {
+               return (Value)Activator.CreateInstance(t.GetType(), t.val + s.val);
+            }
+            throw new Exception();
+        }
+
+        public static Value operator -(Value t, Value s)
+        {
+            if (t.name == s.name)
+            {
+                return (Value)Activator.CreateInstance(t.GetType(), t.val - s.val);
+            }
+            throw new InvalidOperationException("Error operation");
+        }
         public static Value operator *(Value t, Value s)
         {
-            var m = new Value();
-            if (t.GetType() == s.GetType())
+            if (t.name == s.name)
             {
-                Type ty = t.GetType();
-                
-                m.val = t.val * s.val;
-                return (Value)m;
+                return (Value)Activator.CreateInstance(t.GetType(), t.val * s.val);
             }
-           
-            
-            m.name = "m";
-            
-            return m;
+            else return Activator.CreateInstance(Dictionary.search(t.name, '*', s.name), t.val * s.val);
+            throw new InvalidOperationException("Error operation");
+        }
+        public static Value operator /(Value t, Value s)
+        {
+            if (t.name == s.name)
+            {
+                return (Value)Activator.CreateInstance(t.GetType(), t.val / s.val);
+            }
+            else return Activator.CreateInstance(Dictionary.search(t.name, '/', s.name), t.val / s.val);
+            throw new InvalidOperationException("Error operation");
         }
     }
 }

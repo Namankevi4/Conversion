@@ -8,5 +8,7 @@ namespace Conversion
 {
     class Metres : Value
     {
+        public Metres(double value) : base(value) { name = "m";}
+
     }
 }

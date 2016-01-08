@@ -8,6 +8,6 @@ namespace Conversion
 {
     public class Time : Value
     {
-
+        public Time(double value) : base(value) { name = "s"; }
     }
 }

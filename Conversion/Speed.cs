@@ -8,5 +8,7 @@ namespace Conversion
 {
     class Speed : Value
     {
+        
+        public Speed(double value) : base(value) { name = "m/s"; }
     }
 }
